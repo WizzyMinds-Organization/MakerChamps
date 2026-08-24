@@ -1398,6 +1398,7 @@ h2.section-head {
   }
 
   .about-collage {
+    width: 100%;
     max-width: none;
     margin-top: 0;
   }
