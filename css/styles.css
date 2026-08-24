@@ -100,6 +100,11 @@ p {
   text-transform: uppercase;
 }
 
+#backers .eyebrow,
+#safety .eyebrow {
+  font-size: 0.95rem;
+}
+
 .eyebrow::before {
   content: "";
   width: 18px;
@@ -506,6 +511,18 @@ h2.section-head {
   color: var(--mc-orange);
 }
 
+/* NIT callout — the main hook, so it's a highlighted marker-stroke, not just another line */
+.hero-mega .line.callout {
+  display: inline-block;
+  font-size: clamp(1.3rem, 6.5vw, 2rem);
+  color: var(--mc-navy);
+  background: var(--mc-lime);
+  padding: 4px 14px;
+  border-radius: 6px;
+  transform: rotate(-1.5deg);
+  margin: 10px 0 6px;
+}
+
 /* Collage block sits below the headline — no overlap, so type stays fully readable */
 .hero-collage {
   position: relative;
@@ -761,7 +778,8 @@ h2.section-head {
 
 .module-card h3 {
   margin-top: 8px;
-  font-size: 1.12rem;
+  font-size: 1.42rem;
+  line-height: 1.15;
   color: var(--mc-navy);
 }
 
